@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<!--    <link th:href="@{css/style.css}" rel="stylesheet" />-->
+    <style>
+        *{
+            font-family: poppins;
+        }
+        p{
+            font-size: 18px;
+        }
+        .wrapper, .header{
+            /*background-color: lightcyan;*/
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            /*border: 1px solid #000;*/
+        }
+
+        .jarak{
+            text-align: center;
+            /*margin: 20px ;*/
+        }
+
+        hr{
+            width: 100%;
+            opacity: 0.5;
+        }
+
+        .btn{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+        img{
+            border-radius: 10px;
+        }
+
+        .footer{
+            background-color: black;
+            padding: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="jarak">Hello, <span th:text="${subject}"></span> </h1>
+<!--            <p th:text="${mailtext}"></p>-->
+
+            <img src="https://images.unsplash.com/photo-1664572402064-d0d06bf6a0df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80" alt="" width="100%">
+            <h1 class="jarak">Welcome to Capture</h1>
+            <p th:text="${toBody}"></p>
+<!--            <p>Welcome to Capture Digital photography collection.Over the next few days we'll send you a short series of emails to help you get started. We look forward to helping you close the gap between the practice and theory</p>-->
+            <a href="https://arfan-dwi-sukmajaya.herokuapp.com/" class="jarak btn">Get Started</a>
+
+            <hr class="jarak">
+
+            <h2 class="jarak half">Get Capture App</h2>
+
+            <div class="footer">
+                <p class="jarak half">Arfan Dwi Sukmajaya | Copyright © 2022</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</header>
+
+</body>
+</html>
